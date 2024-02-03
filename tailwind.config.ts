@@ -98,6 +98,7 @@ module.exports = {
         50: "#D8D8D8", //Gris chips
         100: "#005EAA", //Azul general
         180: "#003DA5", // Azul sidebar
+        190: "#5AC3F0", // Azul principal
         200: "#F7F8FC", //Fondo pantallas
         250: "#ECECEC", //Gris tarjetas info
         300: "#E7E7E7 ", //Gris Hover

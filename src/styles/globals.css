@@ -156,4 +156,24 @@ input[type="number"] {
     @apply font-light;
     @apply leading-xl
   }
+
+  .nav{
+    @apply grid;
+    @apply grid-cols-3;
+    @apply items-center;
+    @apply font-roboto;
+    @apply font-semibold ;
+    @apply text-principal-150;
+    @apply bg-principal-190;
+    @apply shadow-3xl;
+    @apply w-full;
+    @apply h-16;
+    @apply px-6;
+  }
+
+  .ulHeader{
+    @apply hidden absolute group-hover/option:block opacity-0 group-hover/option:opacity-100;
+    @apply bg-principal-190 rounded-8 py-3 mt-0.5 ml-4;
+  }
+  
 }
