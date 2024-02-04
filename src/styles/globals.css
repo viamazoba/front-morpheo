@@ -82,6 +82,30 @@ input[type="number"] {
 }
 
 
+.diagonal{
+  clip-path: polygon(20% 0, 55% 0, 100% 100%, 68% 100%);
+}
+
+.first-diagonal{
+  background-image: url('../../public/images/board.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.second-diagonal{
+  background-image: url('../../public/images/lab.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.poligono{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+  background-image: url('../../public/images/history.jpg');
+  background-size: cover;
+  background-position: center 50%;
+  background-repeat: no-repeat;
+}
+
 @layer base {
   h2{
     @apply font-roboto;
@@ -174,6 +198,29 @@ input[type="number"] {
   .ulHeader{
     @apply hidden absolute group-hover/option:block opacity-0 group-hover/option:opacity-100;
     @apply bg-principal-190 rounded-8 py-3 mt-0.5 ml-4;
+  }
+    
+    
+
+  @keyframes fadeInOut {
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0.5;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+  
+  .animate-fade-in-out {
+    animation: fadeInOut 2s ease-in-out;
+  }
+
+  .animate-fade-in-out-delay {
+    animation: fadeInOut 2s ease-in-out;
+    animation-delay: 1s;
   }
   
 }
