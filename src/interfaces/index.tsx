@@ -14,3 +14,12 @@
 export interface HeaderItemInterface {
     options: string[];
 }
+
+export interface CardTestInterface{
+    idInstitution?: string;
+    urlImage?: string;
+    alt?: string;
+    nameInstitution?: string;
+    numSimulation?: string;
+    isDataTest?: boolean;
+}

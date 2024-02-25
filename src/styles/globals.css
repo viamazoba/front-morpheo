@@ -199,6 +199,20 @@ input[type="number"] {
     @apply hidden absolute group-hover/option:block opacity-0 group-hover/option:opacity-100;
     @apply bg-principal-190 rounded-8 py-3 mt-0.5 ml-4;
   }
+
+  .cardTestText{
+    @apply flex;
+    @apply flex-col;
+    @apply font-roboto;
+    @apply items-center;
+    @apply text-principal-150;
+    @apply rounded-bl-20; 
+    @apply bg-principal-180;
+    @apply w-46;
+    @apply px-2;
+    @apply pt-2; 
+    @apply pb-1;
+  }
     
     
 
@@ -221,6 +235,18 @@ input[type="number"] {
   .animate-fade-in-out-delay {
     animation: fadeInOut 2s ease-in-out;
     animation-delay: 1s;
+  }
+
+
+  @screen sm{
+    .cardTestText{
+      @apply items-start;
+      @apply w-61;
+      @apply h-18;
+      @apply px-8;
+      @apply pr-1;
+      @apply pt-4;
+    }
   }
   
 }
