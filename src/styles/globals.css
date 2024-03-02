@@ -203,7 +203,7 @@ input[type="number"] {
   .cardTestText{
     @apply flex;
     @apply flex-col;
-    @apply font-roboto;
+    /* @apply font-roboto; */
     @apply items-center;
     @apply text-principal-150;
     @apply rounded-bl-20; 
@@ -212,6 +212,38 @@ input[type="number"] {
     @apply px-2;
     @apply pt-2; 
     @apply pb-1;
+  }
+
+  button.carousel__arrow--right{
+    background-image: url('../../public/icons/bottom-arrow-gray.svg'); 
+    background-size: 1rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+    top: 40%;
+    right: -50rem;
+  }
+
+  button.carousel__arrow--left{
+    background-image: url('../../public/icons/bottom-arrow-gray.svg'); 
+    background-size: 1rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+    top: 40%;
+  }
+
+  .cardStartExam{
+    @apply flex;
+    @apply flex-col;
+    @apply items-center;
+    @apply text-center;
+    @apply shadow-4xl; 
+    @apply max-w-37;
+    @apply max-h-72;
+    @apply bg-principal-150; 
+    @apply rounded-20;
+    @apply p-3;
   }
     
     
@@ -246,6 +278,14 @@ input[type="number"] {
       @apply px-8;
       @apply pr-1;
       @apply pt-4;
+    }
+
+    .cardStartExam{
+      @apply max-w-73;
+      @apply min-w-72;
+      @apply max-h-98;
+      @apply p-5;
+      @apply pb-6;
     }
   }
   
