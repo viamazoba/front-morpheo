@@ -2,7 +2,7 @@
 import { CarouselTest as Caro } from './CarouselTest';
 
 const meta = {
-    title: 'Organisms/Carousel/CarouselTest',
+    title: 'Organisms/Carousel',
     component: Caro,
     argTypes: {
         items: { control: 'object' },

@@ -78,3 +78,13 @@ export interface ImageStartExamInterface {
     src: string;
     alt: string
 }
+
+export interface CarouselStartExamInterface{
+    items: CardStartExamInterface[];
+}
+
+export interface CardBannerHomeInterface{
+    nameImage: 'atom'|'exam'|'molecule'|'microscope';
+    textCard: string;
+    className?: string;
+}

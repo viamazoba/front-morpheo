@@ -259,6 +259,31 @@ input[type="number"] {
       opacity: 1;
     }
   }
+
+  @keyframes moveCell {
+    0% {
+      transform: translate(0,0);
+    }
+    30%{
+      transform: translate(105px, 70px);
+    }
+    60%{
+      transform: rotateZ(180deg) translate(205px, 85px);
+    }
+    80%{
+      transform: translate(-5px, 80px);
+    }
+    95%{
+      transform: rotateZ(180deg);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .cell {
+    animation: moveCell 20s infinite;
+  }
   
   .animate-fade-in-out {
     animation: fadeInOut 2s ease-in-out;
@@ -267,6 +292,22 @@ input[type="number"] {
   .animate-fade-in-out-delay {
     animation: fadeInOut 2s ease-in-out;
     animation-delay: 1s;
+  }
+
+  .carousel--startExam > .splide__arrows{
+    display: none;
+  }
+
+  .carousel--startExam > .splide__track{
+    height: 22rem;
+  }
+
+  .splide__pagination.splide__pagination--ltr > li > button.is-active{
+    @apply bg-principal-180
+  }
+
+  .splide__pagination.splide__pagination--ltr > li > button{
+    background-color: rgba(0, 61, 165, 0.5);
   }
 
 
@@ -286,6 +327,10 @@ input[type="number"] {
       @apply max-h-98;
       @apply p-5;
       @apply pb-6;
+    }
+
+    .carousel--startExam  > .splide__track{
+      height: 32rem;
     }
   }
   
