@@ -13,7 +13,7 @@ import { Options } from '@/../@splidejs/react-splide'
 // }
 
 export interface HeaderItemInterface {
-    options: string[];
+    options?: string[];
 }
 
 export interface CardTestInterface{
@@ -49,7 +49,7 @@ export interface CardStartExamInterface {
     buttonText?: string;
     newExam?: boolean;
     isDataCard?:boolean;
-    onClick?: () => void;
+    // onClick?: () => void;
 }
 
 export interface BandStartExamInterface{
@@ -87,4 +87,8 @@ export interface CardBannerHomeInterface{
     nameImage: 'atom'|'exam'|'molecule'|'microscope';
     textCard: string;
     className?: string;
+}
+
+export interface GeneralLayoutInterface{
+    children: React.ReactNode;
 }

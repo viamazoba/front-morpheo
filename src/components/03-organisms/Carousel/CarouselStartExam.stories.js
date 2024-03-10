@@ -42,9 +42,9 @@ export const CarouselStartExam = {
                 buttonText: 'Comenzar examen',
                 newExam: false,
                 isDataCard: true,
-                onClick: () => {
-                    console.log('Button clicked!');
-                },
+                // onClick: () => {
+                //     console.log('Button clicked!');
+                // },
             },
             {
                 id: '1016',
@@ -58,9 +58,9 @@ export const CarouselStartExam = {
                 buttonText: 'Comenzar examen',
                 newExam: true,
                 isDataCard: true,
-                onClick: () => {
-                    console.log('Button clicked!');
-                },
+                // onClick: () => {
+                //     console.log('Button clicked!');
+                // },
             },
         ],
     }

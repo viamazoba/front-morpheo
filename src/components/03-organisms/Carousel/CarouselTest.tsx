@@ -1,3 +1,5 @@
+'use client'
+
 import React, { FC } from 'react';
 import { Carousel } from './Carousel';
 import { CardTest } from '../../02-molecules/cards/CardTest';
