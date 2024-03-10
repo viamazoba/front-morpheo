@@ -34,7 +34,7 @@ export interface CarouselInterface{
 }
 
 export interface CarouselTestInterface{
-    items: CardTestInterface[];
+    items?: CardTestInterface[];
 }
 
 export interface CardStartExamInterface {
@@ -91,4 +91,22 @@ export interface CardBannerHomeInterface{
 
 export interface GeneralLayoutInterface{
     children: React.ReactNode;
+}
+
+export interface SectionWhyInterface{
+    classNameSection?: string;
+    colorText?: string;
+    title: string;
+    paragraph: string;
+}
+
+export interface GeneralSectionInterface{
+    classSection?: string,
+    classBlockText?: string,
+    colorText?: string,
+    title: string,
+    paragraph: string,
+    classComponent?: string,
+    renderItem: React.ReactElement;
+    items: Array<{ [key: string]: any }>;
 }

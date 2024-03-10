@@ -2,6 +2,7 @@ import { BannerHome } from "@/components/02-molecules/BannerHome";
 import { BannerInfoHome } from "@/components/02-molecules/BannerInfoHome";
 import { CarouselStartExam } from "@/components/03-organisms/Carousel/CarouselStartExam";
 import { CarouselTest } from "@/components/03-organisms/Carousel/CarouselTest";
+import { GeneralSection } from "@/components/03-organisms/GeneralSection";
 import Image from "next/image";
 
 const items = [
@@ -14,7 +15,7 @@ const items = [
       isDataTest: true
   },
   {
-      idInstitution: '1016',
+      idInstitution: '1017',
       urlImage: 'https://picsum.photos/124/100',
       alt: 'Image Test',
       nameInstitution: 'ICFES 10°',
@@ -22,7 +23,7 @@ const items = [
       isDataTest: true
   },
   {
-      idInstitution: '1016',
+      idInstitution: '1018',
       urlImage: 'https://picsum.photos/124/100',
       alt: 'Image Test',
       nameInstitution: 'ICFES 11°',
@@ -30,7 +31,7 @@ const items = [
       isDataTest: true
   },
   {
-      idInstitution: '1016',
+      idInstitution: '1019',
       urlImage: 'https://picsum.photos/124/100',
       alt: 'Image Test',
       nameInstitution: 'Universidad Nacional',
@@ -57,7 +58,7 @@ const items2 =  [
       // },
   },
   {
-      id: '1016',
+      id: '1017',
       src: 'https://picsum.photos/124/100',
       alt: 'Image Coupon',
       title: 'Unal',
@@ -73,7 +74,7 @@ const items2 =  [
       // },
   },
   {
-      id: '1016',
+      id: '1018',
       src: 'https://picsum.photos/124/100',
       alt: 'Image Coupon',
       title: 'ICFES 11°',
@@ -92,18 +93,35 @@ const items2 =  [
 
 export default function Home() {
   return (
-    // <main className="flex min-h-screen flex-col items-center justify-between p-24">
-    //     <h1>Crea la home page</h1>
-    // </main>
     <main>
       <BannerHome/>
-      <CarouselTest
+      <GeneralSection
+        classSection="flex flex-col items-center py-14 sm:pb-33 sm:pt-20"
+        classBlockText="mb-8 px-3 sm:mb-18"
+        classComponent="max-w-120"
+        title="Prueba tus conocimientos"
+        paragraph="Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Adipisci Alias Aperiam At, Aut Commodi Corporis Dolorum Ducimus Labore Magnam Mollitia Natus Porro Possimus Quae Sit Tenetur Veniam Veritatis Voluptate Voluptatem!"
+        renderItem={<CarouselTest items={items}/>}
         items={items}
       />
+        
+      {/* <CarouselTest
+        items={items}
+      /> */}
       <BannerInfoHome/>
-      <CarouselStartExam
-        items={items2}
+      <GeneralSection
+        classSection="flex flex-col items-center py-14 sm:pb-33 sm:pt-20"
+        classBlockText="mb-8 px-3 sm:mb-18"
+        classComponent="max-w-120"
+        title="Presenta exámenes"
+        paragraph="Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Adipisci Alias Aperiam At, Aut Commodi Corporis Dolorum Ducimus Labore Magnam Mollitia Natus Porro Possimus Quae Sit Tenetur Veniam Veritatis Voluptate Voluptatem!"
+        renderItem={<CarouselStartExam items={items2} />}
+        items={items}
       />
+
+      {/* <CarouselStartExam
+        items={items2}
+      /> */}
     </main>
   );
 }

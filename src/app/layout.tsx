@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.variable} className="overflow-x-hidden"`}>
+      <body>
         <Header />
         <GeneralLayout>
           {children}

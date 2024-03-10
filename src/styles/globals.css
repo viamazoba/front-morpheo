@@ -188,7 +188,7 @@ input[type="number"] {
     @apply font-roboto;
     @apply font-semibold ;
     @apply text-principal-150;
-    @apply bg-principal-190;
+    @apply bg-principal-100;
     @apply shadow-3xl;
     @apply w-full;
     @apply h-16;

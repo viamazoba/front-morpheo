@@ -3,10 +3,17 @@ import { CardBannerHome } from './cards/CardBannerHome'
 import cell from '@icons/cell.svg'
 import cellTwo from '@icons/cell-two.svg'
 import Image from 'next/image'
+import { SectionWhy } from './SectionWhy'
 
 export const BannerInfoHome = ()=>{
     return(
-        <section className='w-full h-2/5 bg-principal-100 py-14 sm:py-33'>
+        <section className='flex flex-col items-center w-full h-2/5 bg-principal-100 py-14 sm:pb-33 sm:pt-20'>
+            <SectionWhy
+                classNameSection='mb-8 px-3 sm:mb-18'
+                colorText='text-principal-650'
+                title='Aprende bajo premisas simples'
+                paragraph='Lorem Ipsum Dolor Sit Amet, Consectetur Adipisicing Elit. Adipisci Alias Aperiam At, Aut Commodi Corporis Dolorum Ducimus Labore Magnam Mollitia Natus Porro Possimus Quae Sit Tenetur Veniam Veritatis Voluptate Voluptatem!'
+            />
             <div className='relative grid grid-rows-4 justify-center gap-3 w-full sm:flex sm:flex-row sm:justify-evenly'>
                 <CardBannerHome
                     nameImage='atom'
