@@ -97,7 +97,15 @@ module.exports = {
         '3xl': '0px 10px 10px 0px rgba(0, 0, 0, 0.07)',
         '4xl': '0px 10px 20px 0px rgba(0, 60, 106, 0.15)',
         '5xl': '0px 15px 10px 0px rgba(0, 61, 165, 0.07)',
-        '6xl': '0px 9px 10px 0px rgba(0, 60, 106, 0.07)'
+        '6xl': '0px 9px 10px 0px rgba(0, 60, 106, 0.07)',
+        'red': '0px 9px 10px 0px rgba(253, 83, 109, 0.3)',
+        'redHover': '0px 9px 10px 0px rgba(253, 83, 109, 0.5)',
+        'green': '0px 9px 10px 0px rgba(151, 215, 0, 0.3)',
+        'greenHover': '0px 9px 10px 0px rgba(151, 215, 0, 0.5)',
+        'blueOne': '0px 9px 10px 0px rgba(1, 196, 174, 0.3)',
+        'blueOneHover': '0px 9px 10px 0px rgba(1, 196, 174, 0.5)',
+        'blueTwo': '0px 9px 10px 0px rgba(90, 195, 240, 0.3)',
+        'blueTwoHover': '0px 9px 10px 0px rgba(90, 195, 240, 0.5)'
       },
       zIndex: {
         '0': '0',

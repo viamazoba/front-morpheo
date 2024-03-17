@@ -245,8 +245,39 @@ input[type="number"] {
     @apply rounded-20;
     @apply p-3;
   }
-    
-    
+  
+  .input{
+    @apply w-full mt-1 text-14 p-1.5 rounded-4 border-principal-50 border;
+    @apply focus:outline-none focus:border-principal-330 focus:border;
+  }
+  
+  .input::placeholder{
+    @apply opacity-60;
+  }
+
+  .label{
+    @apply font-medium py-1 leading-5 text-principal-350;
+  }
+
+  .generalButton{
+    @apply font-semibold w-full rounded-4 text-principal-150 shadow-6xl cursor-pointer py-2 px-7;
+  }
+
+  .redButton{
+    @apply bg-principal-500 shadow-red focus:shadow-redHover;
+  }
+  
+  .greenButton{
+    @apply bg-principal-700 shadow-green focus:shadow-greenHover;
+  }
+
+  .blueButton{
+    @apply bg-principal-750 shadow-blueOne focus:shadow-blueOneHover;
+  }
+
+  .blueTwoButton{
+    @apply bg-principal-190 shadow-blueTwo focus:shadow-blueTwoHover;
+  }
 
   @keyframes fadeInOut {
     0%{

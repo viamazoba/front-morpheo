@@ -110,3 +110,23 @@ export interface GeneralSectionInterface{
     renderItem: React.ReactElement;
     items: Array<{ [key: string]: any }>;
 }
+
+export interface customInputInterface{
+    idInput: string;
+    classContainer?: string;
+    labelInput: string;
+    classLabel?: string;
+    typeInput: 'text'|'email'|'number'|'tel'|'file'|'date'|'datetime';
+    placeholderInput?: string;
+    valueRequired?: boolean;
+    classInput?: string;
+    onChange?: () => void;
+    value?: string;
+}
+
+export interface GeneralButtonInterface{
+    buttonType: 'redButton'|'greenButton'|'blueButton'|'blueTwoButton';
+    textButton: string;
+    classButton: string;
+    onCLick?: ()=>void;
+}

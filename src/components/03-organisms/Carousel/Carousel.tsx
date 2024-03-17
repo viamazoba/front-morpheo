@@ -1,7 +1,6 @@
 import { CarouselInterface } from "@/interfaces";
 import React, { FC } from "react";
 import { Splide, SplideSlide, Options, SplideProps, SplideTrack } from '@splidejs/react-splide'
-// Default theme
 import '@splidejs/react-splide/css';
 
 export const Carousel: FC<CarouselInterface> = ({options, className, tag, renderItem, items})=>{
