@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import Image from 'next/image'
 import logo from '@icons/logo.svg'
@@ -5,9 +7,9 @@ import google from '@icons/google.svg'
 import facebook from '@icons/facebook.svg'
 import twitter from '@icons/twitter.svg'
 import linkedin from '@icons/linkedin.svg'
-//grid grid-cols-4 gap-7
+import DisableComponents from '@/HOC/DisableComponents'
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer className='flex justify-around flex-wrap font-roboto w-full text-principal-550 bg-principal-350 pt-12 px-5'> 
         <div className='flex flex-col items-center text-center p-8 mb-12'>
@@ -72,3 +74,5 @@ export const Footer = () => {
     </footer>
   )
 }
+
+export default DisableComponents(Footer)

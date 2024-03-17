@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "../styles/globals.css";
 import { roboto } from "@/utils/fonts";
 import GeneralLayout from "@/components/04-templates/GeneralLayout";
-import { Header } from "@/components/02-molecules/Header";
-import { Footer } from "@/components/02-molecules/Footer";
+import  Header  from "@/components/02-molecules/Header";
+import Footer from "@/components/02-molecules/Footer";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="flex flex-col">
         <Header />
         <GeneralLayout>
           {children}

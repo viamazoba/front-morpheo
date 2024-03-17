@@ -1,11 +1,14 @@
+'use client'
+
 import React, { FC, useState } from 'react'
 import { type HeaderItemInterface } from '@/interfaces'
 import Link from 'next/link';
 import Image from 'next/image';
 import logo from '@icons/logo.svg'
 import menu from '@icons/menu-hamburguesa.svg'
+import DisableComponents from '@/HOC/DisableComponents';
 
-export const Header: FC<HeaderItemInterface> = ({options}) => {
+const Header: FC<HeaderItemInterface> = ({options}) => {
     // const [isDropdownOpen, setDropdownOpen] = useState(false);
     // const [selectedOption, setSelectedoption] = useState('')
 
@@ -61,3 +64,5 @@ export const Header: FC<HeaderItemInterface> = ({options}) => {
     </nav>
     )
 }
+
+export default DisableComponents(Header)

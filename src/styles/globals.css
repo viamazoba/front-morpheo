@@ -264,19 +264,19 @@ input[type="number"] {
   }
 
   .redButton{
-    @apply bg-principal-500 shadow-red focus:shadow-redHover;
+    @apply bg-principal-500 shadow-red hover:shadow-redHover;
   }
   
   .greenButton{
-    @apply bg-principal-700 shadow-green focus:shadow-greenHover;
+    @apply bg-principal-700 shadow-green hover:shadow-greenHover;
   }
 
   .blueButton{
-    @apply bg-principal-750 shadow-blueOne focus:shadow-blueOneHover;
+    @apply bg-principal-750 shadow-blueOne hover:shadow-blueOneHover;
   }
 
   .blueTwoButton{
-    @apply bg-principal-190 shadow-blueTwo focus:shadow-blueTwoHover;
+    @apply bg-principal-190 shadow-blueTwo hover:shadow-blueTwoHover;
   }
 
   @keyframes fadeInOut {

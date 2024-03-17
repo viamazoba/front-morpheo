@@ -11,12 +11,13 @@ const Login =()=>{
     }
     return(
         <FormStructure
-            classContainer=""
+            classContainer="max-w-85 h-96"
+            classForm="grid grid-rows-3 gap-y-7 mt-12"
             onSubmit={()=>{}}
         >
             <CustomInput
                 idInput="email"
-                labelInput="Correo" 
+                labelInput="Correo Electrónico" 
                 typeInput={"email"}
                 placeholderInput="morpheo@ejemplo.com"                
             />
@@ -29,7 +30,7 @@ const Login =()=>{
             <GeneralButton 
                 buttonType={"redButton"} 
                 textButton={"Ingresar"} 
-                classButton={""}
+                classButton={"max-h-9 mt-5"}
             />
         </FormStructure>
     )
