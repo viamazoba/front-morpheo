@@ -116,7 +116,7 @@ export interface customInputInterface{
     classContainer?: string;
     labelInput: string;
     classLabel?: string;
-    typeInput: 'text'|'email'|'number'|'tel'|'file'|'date'|'datetime';
+    typeInput: 'text'|'email'|'number'|'tel'|'file'|'date'|'datetime'|'password';
     placeholderInput?: string;
     valueRequired?: boolean;
     classInput?: string;

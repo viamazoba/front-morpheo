@@ -104,10 +104,6 @@ export default function Home() {
         renderItem={<CarouselTest items={items}/>}
         items={items}
       />
-        
-      {/* <CarouselTest
-        items={items}
-      /> */}
       <BannerInfoHome/>
       <GeneralSection
         classSection="flex flex-col items-center py-14 sm:pb-33 sm:pt-20"
@@ -118,10 +114,6 @@ export default function Home() {
         renderItem={<CarouselStartExam items={items2} />}
         items={items}
       />
-
-      {/* <CarouselStartExam
-        items={items2}
-      /> */}
     </main>
   );
 }

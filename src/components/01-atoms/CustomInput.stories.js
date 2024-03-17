@@ -11,7 +11,7 @@ const meta = {
         typeInput: {
             control: {
                 type: 'select',
-                options: ['text', 'email', 'number', 'tel', 'file', 'date', 'datetime']
+                options: ['text', 'email', 'number', 'tel', 'file', 'date', 'datetime', 'password']
             }
         },
         placeholderInput: { control: 'text' },
