@@ -341,6 +341,12 @@ input[type="number"] {
     background-color: rgba(0, 61, 165, 0.5);
   }
 
+  .formLogin{
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 1/3fr 1fr; 
+    /* @apply grid grid-rows-3 gap-y-7 mt-12; */
+  }
+
 
   @screen sm{
     .cardTestText{

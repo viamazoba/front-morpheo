@@ -132,3 +132,16 @@ export interface GeneralButtonInterface{
     classButton: string;
     onCLick?: ()=>void;
 }
+
+export interface LinkTextInterface {
+    href: string;
+    text: string;
+    classNameText?: string;
+    classNameContainer?: string;
+}
+
+export interface TitleFormInterface{
+    titleText: string;
+    paragraph?: string;
+    classContainer?: string;
+}
