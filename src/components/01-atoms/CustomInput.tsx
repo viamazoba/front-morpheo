@@ -1,5 +1,5 @@
 import { customInputInterface } from "@/interfaces";
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 
 
 export const CustomInput: FC<customInputInterface> = ({
@@ -12,7 +12,9 @@ export const CustomInput: FC<customInputInterface> = ({
     valueRequired,
     classInput,
     onChange,
-    value
+    value,
+    regex,
+    regexMessage
 })=>{
     return(
         <div className={`${classContainer}`}>
@@ -27,6 +29,11 @@ export const CustomInput: FC<customInputInterface> = ({
                 onChange={onChange}
                 value={value}
             />
+            {   
+        
+                (!regex.test(value) && value!='') &&
+                <p className="text-12 text-principal-500 mt-1 ml-2">{regexMessage}</p>
+            }
         </div>
     )
 }

@@ -120,8 +120,10 @@ export interface customInputInterface{
     placeholderInput?: string;
     valueRequired?: boolean;
     classInput?: string;
-    onChange?: () => void;
-    value?: string;
+    onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+    value: string;
+    regex: RegExp;
+    regexMessage?: string;
 }
 
 export interface GeneralButtonInterface{
