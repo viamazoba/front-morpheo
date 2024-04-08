@@ -8,7 +8,7 @@ export const DisableComponents = (Component:any)=>{
     const Disable = (props:any)=>{
         
         const path = usePathname();
-        const disableRoutes = ['/Login']
+        const disableRoutes = ['/Login','/ResetPassword']
 
         if(disableRoutes.includes(path)){
             return null

@@ -344,7 +344,11 @@ input[type="number"] {
   .formLogin{
     display: grid;
     grid-template-rows: 2fr 1fr 1fr 1/3fr 1fr; 
-    /* @apply grid grid-rows-3 gap-y-7 mt-12; */
+  }
+
+  .formResetPassword{
+    display: grid;
+    grid-template-rows: 2fr 1fr 1/2fr;
   }
 
 
