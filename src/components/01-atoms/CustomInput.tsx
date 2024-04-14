@@ -13,7 +13,7 @@ export const CustomInput: FC<customInputInterface> = ({
     classInput,
     onChange,
     value,
-    regex,
+    regex=/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
     regexMessage
 })=>{
     return(

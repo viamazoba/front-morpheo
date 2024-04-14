@@ -351,6 +351,24 @@ input[type="number"] {
     grid-template-rows: 2fr 1fr 1/2fr;
   }
 
+  .initialTransitionAccordion{
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 500ms grid-template-rows ease;
+  }
+
+  .finalTransitionAccordion{
+    grid-template-rows: 1fr;
+  }
+
+  /* .inputUploadImage{
+
+  }
+
+  .labelUploadImage{
+
+  } */
+
 
   @screen sm{
     .cardTestText{
