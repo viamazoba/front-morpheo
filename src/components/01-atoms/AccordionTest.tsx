@@ -1,8 +1,14 @@
-import React, { useState } from 'react'
+import React, { FC, useState } from 'react'
 import Image from 'next/image'
 import arrow from '@icons/angulo-abajo.svg'
 
-export const AccordionTest = () =>{
+type AccordionTestInterface = {
+    children: React.ReactNode;
+}
+
+export const AccordionTest: FC<AccordionTestInterface> = ({
+    children = <p>Contenido</p>
+}) =>{
     const [openTab, setOpenTab] = useState<boolean>(false)
     const handleOpenTab = ()=>{
         setOpenTab(!openTab)
@@ -24,7 +30,7 @@ export const AccordionTest = () =>{
                 <div className={`grid overflow-hidden ease-in-out duration-300 ${
                     openTab ? 'grid-rows-[1fr] opacity-100 px-3 py-4 ' : 'grid-rows-[0fr] opacity-0'}`}>
                         <div className='overflow-hidden'>
-                            Contenido
+                            {children}
                         </div>
                 </div>
         </div>

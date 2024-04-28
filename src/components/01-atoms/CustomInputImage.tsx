@@ -1,8 +1,14 @@
-import React, { useState } from 'react';
+import React, { FC, useState } from 'react';
 import upload from '@icons/upload.svg'
 import Image from 'next/image'
 
-export const CustomInputImage = () => {
+type CustomInputImageInterface = {
+  classContainer?: string,
+}
+
+export const CustomInputImage: FC<CustomInputImageInterface> = ({
+  classContainer
+}) => {
 
   const [imageSrc, setImageSrc] = useState<string | null>(null);
 
@@ -21,7 +27,7 @@ export const CustomInputImage = () => {
   };
 
   return (
-    <div className=''>
+    <div className={`${classContainer}`}>
         <div className='flex justify-center blueTwoButton max-w-60 rounded-8 py-3'>
             <input
                 className='hidden'
@@ -30,7 +36,7 @@ export const CustomInputImage = () => {
                 id='fileImage'
                 onChange={handleImageChange}
             />
-            <label htmlFor="fileImage" className='flex justify-center items-center font-medium text-center capitalize select-none cursor-pointer text-principal-200 w-full'>
+            <label htmlFor="fileImage" className='flex justify-center items-center font-medium text-center capitalize select-none cursor-pointer text-principal-200 w-full min-w-52'>
                 <Image
                     src={upload}
                     width={25}

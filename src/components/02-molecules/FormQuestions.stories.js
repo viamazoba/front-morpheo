@@ -1,9 +1,9 @@
-import { CustomAreaText as AreaText } from './CustomAreaText.tsx';
+import { FormQuestions as Questions } from './FormQuestions';
 
 const meta = {
-    title: 'Atoms/CustomAreaText',
+    title: 'Atoms/FormQuestions',
 
-    component: AreaText,
+    component: Questions,
     argTypes: {
         // nameImage: {
         //     control: {
@@ -11,7 +11,7 @@ const meta = {
         //         options: ['atom', 'exam', 'molecule', 'microscope']
         //     }
         // },
-        labelText: { control: 'text' },
+        //labelText: { control: 'text' },
     }
 };
 
@@ -19,9 +19,9 @@ const meta = {
 
 export default meta;
 
-export const CustomAreaText = {
+export const FormQuestions = {
     args: {
         // nameImage: 'atom',
-        labelText: 'Ingrese texto',
+        //labelText: 'Ingrese texto',
     }
 };
