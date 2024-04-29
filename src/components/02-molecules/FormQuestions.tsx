@@ -11,7 +11,7 @@ export const FormQuestions = ()=>{
             <FormQuestionStructure classContainer={"w-full px-4 pb-5 pt-3"} classForm={"w-full"} onSubmit={()=>{}}>
                 <CustomAreaText labelText={"Ingrese pregunta"}/>
                 <CustomInputImage
-                    classContainer = 'flex justify-center w-full my-8'
+                    classContainer = {'flex justify-center w-full my-8'}
                 />
                 <CustomAreaText 
                     labelText={"Ingrese Texto auxiliar"}
@@ -29,9 +29,19 @@ export const FormQuestions = ()=>{
                     labelText={"Respuesta C"}
                     classContainer="mb-2"
                 />
-                <CustomAreaText labelText={"Respuesta D"}/>
-                <GeneralButton buttonType={"blueTwoButton"} textButton={"Guardar"} classButton={"mt-8"}/>
-                <GeneralButton buttonType={"redButton"} textButton={"Borrar contenido"} classButton={"mt-3"}/>
+                <CustomAreaText 
+                    labelText={"Respuesta D"}
+                />
+                <GeneralButton 
+                    buttonType={"blueTwoButton"} 
+                    textButton={"Guardar"} 
+                    classButton={"mt-8"}
+                />
+                <GeneralButton 
+                    buttonType={"redButton"} 
+                    textButton={"Borrar contenido"} 
+                    classButton={"mt-3"}
+                />
             </FormQuestionStructure>
         </AccordionTest>
     )
