@@ -28,25 +28,25 @@ export const CustomInputImage: FC<CustomInputImageInterface> = ({
 
   return (
     <div className={`${classContainer}`}>
-        <div className='flex justify-center blueTwoButton max-w-60 rounded-8 py-3'>
-            <input
-                className='hidden'
-                type="file"
-                accept="image/*"
-                id='fileImage'
-                onChange={handleImageChange}
-            />
-            <label htmlFor="fileImage" className='flex justify-center items-center font-medium text-center capitalize select-none cursor-pointer text-principal-200 w-full min-w-52'>
-                <Image
-                    src={upload}
-                    width={25}
-                    height={25}
-                    alt='Icono de imagen'
-                    className='mr-3'
-                />
-                Agregar imagen
-            </label>
-        </div>
+      {!imageSrc && <div className='flex justify-center blueTwoButton max-w-60 rounded-8 py-3'>
+          <input
+              className='hidden'
+              type="file"
+              accept="image/*"
+              id='fileImage'
+              onChange={handleImageChange}
+          />
+          <label htmlFor="fileImage" className='flex justify-center items-center font-medium text-center capitalize select-none cursor-pointer text-principal-200 w-full min-w-52'>
+              <Image
+                  src={upload}
+                  width={25}
+                  height={25}
+                  alt='Icono de imagen'
+                  className='mr-3'
+              />
+              Agregar imagen
+          </label>
+      </div>}
       {imageSrc && <img src={imageSrc} alt="Imagen subida" />}
     </div>
   );

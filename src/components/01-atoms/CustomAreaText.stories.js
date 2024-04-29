@@ -12,6 +12,7 @@ const meta = {
         //     }
         // },
         labelText: { control: 'text' },
+        classContainer: { control: 'text' },
     }
 };
 
@@ -23,5 +24,6 @@ export const CustomAreaText = {
     args: {
         // nameImage: 'atom',
         labelText: 'Ingrese texto',
+        classContainer: ''
     }
 };

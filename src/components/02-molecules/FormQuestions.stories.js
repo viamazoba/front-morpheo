@@ -1,7 +1,7 @@
 import { FormQuestions as Questions } from './FormQuestions';
 
 const meta = {
-    title: 'Atoms/FormQuestions',
+    title: 'Molecules/FormQuestions',
 
     component: Questions,
     argTypes: {
