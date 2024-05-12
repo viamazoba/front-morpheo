@@ -127,7 +127,7 @@ export interface customInputInterface{
 }
 
 export interface GeneralButtonInterface{
-    buttonType: 'redButton'|'greenButton'|'blueButton'|'blueTwoButton';
+    buttonType: 'redButton'|'greenButton'|'blueButton'|'blueTwoButton'|string;
     textButton: string;
     classButton: string;
     onCLick?: ()=>void;
