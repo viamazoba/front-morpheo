@@ -1,15 +1,15 @@
 import React, { FC } from "react";
 import { GeneralButton } from "../01-atoms/GeneralButton";
 
+type ButtonGroupInterface = {
+    nameButton: string,
+    typeButton: string,
+    classButton: string,
+}
+
 type GroupButtonsInterface = {
     classContainer?: string;
-    arrayButtons : [
-        {
-            nameButton: string,
-            typeButton: string,
-            classButton: string,
-        }
-    ]
+    arrayButtons : ButtonGroupInterface[]
 }
 
 export const GroupButtons: FC<GroupButtonsInterface> = ({
