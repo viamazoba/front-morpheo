@@ -5,6 +5,7 @@ type ButtonGroupInterface = {
     nameButton: string,
     typeButton: string,
     classButton: string,
+    onCLick?: ()=> void
 }
 
 type GroupButtonsInterface = {
@@ -35,6 +36,7 @@ export const GroupButtons: FC<GroupButtonsInterface> = ({
                     buttonType={item.typeButton} 
                     textButton={item.nameButton} 
                     classButton={item.classButton}
+                    onCLick={item.onCLick}
                 />
             ))}
         </div>
