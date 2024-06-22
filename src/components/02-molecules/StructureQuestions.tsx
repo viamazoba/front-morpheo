@@ -34,12 +34,12 @@ export const StructureQuestions: FC<StructureQuestionsInterface> = ({
 }) =>{
 
     return(
-        <div className={`${classContainer}`}>
+        <div className={`${classContainer} bg-principal-680`}>
             <MarkdownText
                 textContainer={questionObject.question}
-                classContainer=""
+                classContainer="text-base sm:text-18"
             />
-            <div className="flex justify-center w-full mt-4 mb-6">
+            <div className="flex justify-center w-full my-8">
                 <Image
                     width={300}
                     height={300} 
@@ -49,7 +49,7 @@ export const StructureQuestions: FC<StructureQuestionsInterface> = ({
             </div>
             <MarkdownText
                 textContainer={questionObject.auxiliarText||''}
-                classContainer="mb-2"
+                classContainer="text-base sm:text-18 mb-2"
             />
             {
                 questionObject.options.map((element,index) => {
@@ -57,7 +57,7 @@ export const StructureQuestions: FC<StructureQuestionsInterface> = ({
                         <MarkdownText
                             key={index}
                             textContainer={element}
-                            classContainer="mt-1"
+                            classContainer="text-14 md:text-base mt-1.5"
                         />
                     )
                 })

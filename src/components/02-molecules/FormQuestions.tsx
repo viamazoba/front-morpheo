@@ -5,6 +5,7 @@ import { CustomInputImage } from "../01-atoms/CustomInputImage";
 import { GeneralButton } from "../01-atoms/GeneralButton";
 import { FormQuestionStructure } from "../01-atoms/FormQuestionStructure";
 import { GroupButtons } from "./GroupButtons";
+import { RadioButtons } from "../01-atoms/RadioButtons";
 
 export const FormQuestions = ()=>{
     return(
@@ -18,9 +19,12 @@ export const FormQuestions = ()=>{
                     labelText={"Ingrese Texto auxiliar y respuestas"}
                     classContainer="mb-8"
                 />
-                <CustomAreaText 
+                {/* <CustomAreaText 
                     labelText={"Ingrese la respuesta correcta"}
                     classContainer="mb-2"
+                /> */}
+                <RadioButtons 
+                    classContainer='mb-8'
                 />
                 {/* <CustomAreaText 
                     labelText={"Respuesta B"}
