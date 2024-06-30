@@ -4,7 +4,7 @@ import arrow from '@icons/angulo-abajo.svg'
 import { Remove } from './custom-icons/Remove'
 
 type AccordionTestInterface = {
-    children: React.ReactNode;
+    children?: React.ReactNode;
 }
 
 export const AccordionTest: FC<AccordionTestInterface> = ({
