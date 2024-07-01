@@ -36,7 +36,6 @@ export const RadioButtons = ({
 
     // Estado para almacenar la opción seleccionada
   const [selectedOption, setSelectedOption] = useState('');
-  console.log(dataButtons);
 
   // Manejador de cambio para los radio buttons
   const handleOptionChange = (e:ChangeEvent<HTMLInputElement>) => {
