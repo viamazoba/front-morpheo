@@ -4,6 +4,7 @@ import { CustomAreaText } from "../01-atoms/CustomAreaText"
 import { RadioButtons } from "../01-atoms/RadioButtons"
 import { AddMore } from "../01-atoms/custom-icons/AddMore"
 import { CloseCircle } from "../01-atoms/custom-icons/CloseCircle"
+import { AddMoreSimbol } from '../01-atoms/AddMoreSimbol';
 
 type BasicQuestionTextProps = {
     questions: string[]
@@ -69,20 +70,10 @@ export const BasicQuestionText = ({
                     </div>
                 ))
             }
-            <div className="flex justify-center w-full mt-5">
-                <div className="group flex flex-col cursor-pointer items-center rounded w-fit py-1">
-                    <AddMore
-                        classSvg="w-14 h-14 p-0.5"
-                        onClick={handleAddQuestion}
-                    />
-                    <p 
-                        className="text-14 text-principal-350 text-opacity-90 cursor-pointer group-hover:text-principal-350 group-hover:font-semibold"
-                        onClick={handleAddQuestion}
-                    >
-                        Añadir más preguntas
-                    </p>
-                </div>
-            </div>
+            <AddMoreSimbol
+                text={'Añadir pregunta'}
+                onClick={handleAddQuestion}
+            />
         </div>
     )
 }
