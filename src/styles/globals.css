@@ -246,14 +246,47 @@ input[type="number"] {
     @apply p-3;
   }
   
-  .input{
+  .input, 
+  .select {
     @apply w-full mt-1 text-14 p-1.5 rounded-4 border-principal-50 border;
     @apply focus:outline-none focus:border-principal-330 focus:border;
   }
+
+  .select {
+    @apply bg-principal-150 cursor-pointer py-2 px-1;
+  }
+
   
   .input::placeholder{
     @apply opacity-60;
   }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s forwards;
+  }
+  
+  .fade-out {
+    animation: fadeOut 0.8s forwards;
+  }
+
 
   .label{
     @apply font-medium py-1 leading-5 text-principal-350;
