@@ -82,6 +82,30 @@ input[type="number"] {
 }
 
 
+.diagonal{
+  clip-path: polygon(20% 0, 55% 0, 100% 100%, 68% 100%);
+}
+
+.first-diagonal{
+  background-image: url('../../public/images/board.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.second-diagonal{
+  background-image: url('../../public/images/lab.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.poligono{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%);
+  background-image: url('../../public/images/history.jpg');
+  background-size: cover;
+  background-position: center 50%;
+  background-repeat: no-repeat;
+}
+
 @layer base {
   h2{
     @apply font-roboto;
@@ -156,4 +180,250 @@ input[type="number"] {
     @apply font-light;
     @apply leading-xl
   }
+
+  .nav{
+    @apply grid;
+    @apply grid-cols-3;
+    @apply items-center;
+    @apply font-roboto;
+    @apply font-semibold ;
+    @apply text-principal-150;
+    @apply bg-principal-100;
+    @apply shadow-3xl;
+    @apply w-full;
+    @apply h-16;
+    @apply px-6;
+  }
+
+  .ulHeader{
+    @apply hidden absolute group-hover/option:block opacity-0 group-hover/option:opacity-100;
+    @apply bg-principal-190 rounded-8 py-3 mt-0.5 ml-4;
+  }
+
+  .cardTestText{
+    @apply flex;
+    @apply flex-col;
+    /* @apply font-roboto; */
+    @apply items-center;
+    @apply text-principal-150;
+    @apply rounded-bl-20; 
+    @apply bg-principal-180;
+    @apply w-46;
+    @apply px-2;
+    @apply pt-2; 
+    @apply pb-1;
+  }
+
+  button.carousel__arrow--right{
+    background-image: url('../../public/icons/bottom-arrow-gray.svg'); 
+    background-size: 1rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+    top: 40%;
+    right: -50rem;
+  }
+
+  button.carousel__arrow--left{
+    background-image: url('../../public/icons/bottom-arrow-gray.svg'); 
+    background-size: 1rem;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+    top: 40%;
+  }
+
+  .cardStartExam{
+    @apply flex;
+    @apply flex-col;
+    @apply items-center;
+    @apply text-center;
+    @apply shadow-4xl; 
+    @apply max-w-37;
+    @apply max-h-72;
+    @apply bg-principal-150; 
+    @apply rounded-20;
+    @apply p-3;
+  }
+  
+  .input, 
+  .select {
+    @apply w-full mt-1 text-14 p-1.5 rounded-4 border-principal-50 border;
+    @apply focus:outline-none focus:border-principal-330 focus:border;
+  }
+
+  .select {
+    @apply bg-principal-150 cursor-pointer py-2 px-1;
+  }
+
+  
+  .input::placeholder{
+    @apply opacity-60;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s forwards;
+  }
+  
+  .fade-out {
+    animation: fadeOut 0.8s forwards;
+  }
+
+
+  .label{
+    @apply font-medium py-1 leading-5 text-principal-350;
+  }
+
+  .generalButton{
+    @apply font-semibold w-full rounded-4 text-principal-150 shadow-6xl cursor-pointer py-2 px-7;
+  }
+
+  .redButton{
+    @apply bg-principal-500 shadow-red hover:shadow-redHover;
+  }
+  
+  .greenButton{
+    @apply bg-principal-700 shadow-green hover:shadow-greenHover;
+  }
+
+  .blueButton{
+    @apply bg-principal-750 shadow-blueOne hover:shadow-blueOneHover;
+  }
+
+  .blueTwoButton{
+    @apply bg-principal-190 shadow-blueTwo hover:shadow-blueTwoHover;
+  }
+
+  @keyframes fadeInOut {
+    0%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 0.5;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+  @keyframes moveCell {
+    0% {
+      transform: translate(0,0);
+    }
+    30%{
+      transform: translate(105px, 70px);
+    }
+    60%{
+      transform: rotateZ(180deg) translate(205px, 85px);
+    }
+    80%{
+      transform: translate(-5px, 80px);
+    }
+    95%{
+      transform: rotateZ(180deg);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .cell {
+    animation: moveCell 20s infinite;
+  }
+  
+  .animate-fade-in-out {
+    animation: fadeInOut 2s ease-in-out;
+  }
+
+  .animate-fade-in-out-delay {
+    animation: fadeInOut 2s ease-in-out;
+    animation-delay: 1s;
+  }
+
+  .carousel--startExam > .splide__arrows{
+    display: none;
+  }
+
+  .carousel--startExam > .splide__track{
+    height: 22rem;
+  }
+
+  .splide__pagination.splide__pagination--ltr > li > button.is-active{
+    @apply bg-principal-180
+  }
+
+  .splide__pagination.splide__pagination--ltr > li > button{
+    background-color: rgba(0, 61, 165, 0.5);
+  }
+
+  .formLogin{
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr 1/3fr 1fr; 
+  }
+
+  .formResetPassword{
+    display: grid;
+    grid-template-rows: 2fr 1fr 1/2fr;
+  }
+
+  .initialTransitionAccordion{
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: 500ms grid-template-rows ease;
+  }
+
+  .finalTransitionAccordion{
+    grid-template-rows: 1fr;
+  }
+
+  /* .inputUploadImage{
+
+  }
+
+  .labelUploadImage{
+
+  } */
+
+
+  @screen sm{
+    .cardTestText{
+      @apply items-start;
+      @apply w-61;
+      @apply h-18;
+      @apply px-8;
+      @apply pr-1;
+      @apply pt-4;
+    }
+
+    .cardStartExam{
+      @apply max-w-73;
+      @apply min-w-72;
+      @apply max-h-98;
+      @apply p-5;
+      @apply pb-6;
+    }
+
+    .carousel--startExam  > .splide__track{
+      height: 32rem;
+    }
+  }
+  
 }

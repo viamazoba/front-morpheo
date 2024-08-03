@@ -10,7 +10,8 @@ module.exports = {
       md: "768px",
       lg: "1024px",
       xl: "1280px",
-      "2xl": "1536px",
+      "2xl": "1440px",
+      "3xl": "1536px",
     },
     fontFamily: {
       roboto: ["Roboto"]
@@ -40,7 +41,22 @@ module.exports = {
     },
     extend: {
       spacing: {
-        px: '1px',
+        18: "4.5rem", // 72px
+        30: "7.6875rem", //123px
+        33: "8.5625rem", // 137px
+        37: "9.375rem", // 150px
+        38: "9.6875rem", // 155px
+        46: "11.5625rem", // 185px
+        50:"12.625rem", // 202px
+        57:"14.4375rem", // 231px
+        61:"15.75rem", // 252px
+        73: "18.25rem", // 292px
+        85: "22.9375rem", // 367px
+        98: "28.3125rem", // 453px
+        120: "90rem", // 1440 px
+        "9/10": "90%",
+        "1/5": "20%",
+        "1/10": "10%",
       },
       borderRadius: {
         2: '0.125rem', // 2px
@@ -81,7 +97,15 @@ module.exports = {
         '3xl': '0px 10px 10px 0px rgba(0, 0, 0, 0.07)',
         '4xl': '0px 10px 20px 0px rgba(0, 60, 106, 0.15)',
         '5xl': '0px 15px 10px 0px rgba(0, 61, 165, 0.07)',
-        '6xl': '0px 9px 10px 0px rgba(0, 60, 106, 0.07)'
+        '6xl': '0px 9px 10px 0px rgba(0, 60, 106, 0.07)',
+        'red': '0px 9px 10px 0px rgba(253, 83, 109, 0.3)',
+        'redHover': '0px 9px 10px 0px rgba(253, 83, 109, 0.5)',
+        'green': '0px 9px 10px 0px rgba(151, 215, 0, 0.3)',
+        'greenHover': '0px 9px 10px 0px rgba(151, 215, 0, 0.5)',
+        'blueOne': '0px 9px 10px 0px rgba(1, 196, 174, 0.3)',
+        'blueOneHover': '0px 9px 10px 0px rgba(1, 196, 174, 0.5)',
+        'blueTwo': '0px 9px 10px 0px rgba(90, 195, 240, 0.3)',
+        'blueTwoHover': '0px 9px 10px 0px rgba(90, 195, 240, 0.5)'
       },
       zIndex: {
         '0': '0',
@@ -98,6 +122,7 @@ module.exports = {
         50: "#D8D8D8", //Gris chips
         100: "#005EAA", //Azul general
         180: "#003DA5", // Azul sidebar
+        190: "#5AC3F0", // Azul principal
         200: "#F7F8FC", //Fondo pantallas
         250: "#ECECEC", //Gris tarjetas info
         300: "#E7E7E7 ", //Gris Hover
