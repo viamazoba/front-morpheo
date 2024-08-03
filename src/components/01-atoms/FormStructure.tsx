@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, FormEvent } from "react";
 import Image from "next/image";
 import logoMorpheo from '@icons/morpheo_logo3.svg'
 
@@ -6,7 +6,7 @@ type formInterface={
     classContainer: string;
     children: React.ReactNode;
     classForm: string;
-    onSubmit: ()=>void
+    onSubmit: (e: FormEvent<HTMLFormElement>) => void
 }
 
 export const FormStructure: FC<formInterface> = ({

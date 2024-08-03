@@ -6,13 +6,14 @@ export const GeneralButton:FC<GeneralButtonInterface> = ({
     buttonType,
     textButton,
     classButton,
-    onCLick
+    onCLick,
+    type
 })=>{
     return(
         <button 
             className={`${classButton} ${buttonType} generalButton`} 
             onClick={onCLick}
-            type="button"
+            type={type}
         >
             {textButton}
         </button>

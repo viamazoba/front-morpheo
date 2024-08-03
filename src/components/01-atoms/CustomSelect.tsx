@@ -1,3 +1,4 @@
+import { ChangeEvent } from "react"
 
 type OptionsSelect = {
     idOption: string
@@ -8,6 +9,7 @@ type CustomSelectProps = {
     idSelect: string
     label: string
     options: OptionsSelect[]
+    handleSeletedOption: (e: ChangeEvent<HTMLSelectElement>) => void
 }
 
 const optionsExample:OptionsSelect[]  = [
@@ -24,7 +26,8 @@ const optionsExample:OptionsSelect[]  = [
 export const CustomSelect = ({
     idSelect='questions',
     label='Tipo de pregunta',
-    options = optionsExample
+    options = optionsExample,
+    handleSeletedOption
 }: CustomSelectProps) => {
     return(
         <div className="flex flex-col">
@@ -38,6 +41,7 @@ export const CustomSelect = ({
                 className="select" 
                 name={idSelect} 
                 id={idSelect}
+                onChange={handleSeletedOption}
             >
                 <option value="">---- &nbsp;&nbsp;Seleccione una opcion&nbsp;&nbsp;-----</option>
                 {
