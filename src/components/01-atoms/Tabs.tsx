@@ -23,23 +23,23 @@ export const Tabs = ({
   
 
   return (
-    <div className="bg-principal-150 rounded-12 w-full h-lvh mx-auto">
-        <div className="flex border-b">
-            {tabs.map((tab, index) => (
-                <button
-                    key={index}
-                    className={`py-2 px-4 transition-colors duration-300 ${
-                    activeTab === index
-                        ? 'font-semibold border-b-2 border-principal-100 bg-principal-250'
-                        : 'border-transparent text-gray-500 hover:text-blue-500'
-                    } ${index===0 && 'rounded-tl-12'}`}
-                    onClick={() => setActiveTab(index)}
-                >
-                    {tab}
-                </button>
-            ))}
-        </div>
-      <div className="p-5">
+    <div className="bg-principal-150 rounded-12 w-full h-full mx-auto">
+      <div className="flex border-b">
+          {tabs.map((tab, index) => (
+              <button
+                  key={index}
+                  className={`py-2 px-4 transition-colors duration-300 ${
+                  activeTab === index
+                      ? 'font-semibold border-b-2 border-principal-100 bg-principal-250'
+                      : 'border-transparent text-gray-500 hover:text-blue-500'
+                  } ${index===0 && 'rounded-tl-12'}`}
+                  onClick={() => setActiveTab(index)}
+              >
+                  {tab}
+              </button>
+          ))}
+      </div>
+      <div>
         {tabsContent[activeTab]}
       </div>
     </div>

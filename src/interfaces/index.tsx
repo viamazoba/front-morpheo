@@ -1,4 +1,5 @@
 import { Options } from '@/../@splidejs/react-splide'
+import { FormEvent, MouseEventHandler } from 'react';
 // export interface CardCouponInterface {
 //     src: string;
 //     alt: string
@@ -130,7 +131,8 @@ export interface GeneralButtonInterface{
     buttonType: 'redButton'|'greenButton'|'blueButton'|'blueTwoButton'|string;
     textButton: string;
     classButton: string;
-    onCLick?: ()=>void;
+    onCLick?: () => void;
+    type?: 'submit'|'button'|'reset';
 }
 
 export interface LinkTextInterface {
