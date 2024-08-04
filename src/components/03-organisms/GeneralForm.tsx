@@ -31,18 +31,20 @@ export function GeneralForm() {
 
 
     return(
-        <section>
+        <section className="pb-6">
             <ModalQuestions
                 isModal={isModal}
                 setIsModal={setIsModal}
                 handleOnSubmit= {handleOnSubmit}
                 setSelectedOption={setSelectedOption}
             />
-            <div className="flex flex-col justify-center bg-principal-350 rounded-4 gap-4 w-full pt-8 pb-8 px-4">
+            <div className="flex flex-col justify-center bg-principal-350 gap-4 w-full pt-8 pb-8 px-4">
                 
                 {
                     questions.length === 0?
-                    'No se han agregado preguntas'
+                    <p className="text-center font-semibold text-principal-200 w-full">
+                        No se han agregado preguntas
+                    </p>
                     :
                     questions.map(question => (
                         question

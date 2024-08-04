@@ -7,9 +7,9 @@ import pill from "@icons/pill.svg"
 
 const GeneralLayout: FC<GeneralLayoutInterface> = ({children})=>{
     return(
-        <div className="overflow-x-hidden relative">
+        <div className="overflow-x-hidden">
             {children}
-            <Image
+            {/* <Image
                 src={pill}
                 width={50}
                 height={50}
@@ -22,7 +22,7 @@ const GeneralLayout: FC<GeneralLayoutInterface> = ({children})=>{
                 height={50}
                 alt="Pildora de fondo"
                 className="absolute top-1/2 left-1/2 opacity-25 z-0"
-            />
+            /> */}
         </div>
     )
 }
