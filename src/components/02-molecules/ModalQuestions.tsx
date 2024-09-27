@@ -98,22 +98,22 @@ export const ModalQuestions = ({
                     classButton="max-h-9 mt-7"
                 /> */}
                 <GroupButtons
-                        classContainer="px-3 mt-8 max-h-18 md:max-h-12 sm:flex sm:justify-center w-full sm:px-8" 
-                        arrayButtons={[
-                            {
-                                nameButton:'Aceptar',
-                                typeButton:'blueTwoButton',
-                                classButton: 'mb-1 md:max-w-96 sm:mb-0 sm:mx-1',
-                                type: 'submit'
-                            },
-                            {
-                                nameButton:'Cancelar',
-                                typeButton:'redButton',
-                                classButton: 'md:max-w-96 sm:mx-1',
-                                onCLick: handleCancel  
-                            }
-                        ]}
-                    />
+                    classContainer="px-3 mt-8 max-h-18 md:max-h-12 sm:flex sm:justify-center w-full sm:px-8" 
+                    arrayButtons={[
+                        {
+                            nameButton:'Aceptar',
+                            typeButton:'blueTwoButton',
+                            classButton: 'mb-1 md:max-w-96 sm:mb-0 sm:mx-1',
+                            type: 'submit'
+                        },
+                        {
+                            nameButton:'Cancelar',
+                            typeButton:'redButton',
+                            classButton: 'md:max-w-96 sm:mx-1',
+                            onCLick: handleCancel  
+                        }
+                    ]}
+                />
             </FormStructure>
         </div>
     )
