@@ -4,7 +4,7 @@ const classes = ['Matemáticas', 'Inglés', 'Español']
 export const CardDetailExam = () => {
 
     return (
-        <div className="cursor-pointer rounded-8 shadow-xl px-4 py-3 max-w-73 hover:translate-x-1 hover:translate-y-1 hover:transition-transform">
+        <div className="bg-principal-150 cursor-pointer rounded-8 shadow-xl px-4 py-3 max-w-73 max-h-fit hover:translate-x-1 hover:translate-y-1 hover:transition-transform">
             <h2 className="text-principal-350">
                 ICFES
             </h2>
