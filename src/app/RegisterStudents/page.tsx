@@ -25,7 +25,7 @@ export default function RegisterStudents() {
                 className="flex flex-col gap-y-10 rounded-12 bg-principal-150 shadow-xl px-16 pt-9 pb-11 my-20 mx-auto h-fit w-fit"
             >
 
-                <section className="flex justify-center">
+                <section className="flex justify-left">
                     <SelectAndInput
                         classNameContainer="max-w-[903px]"
                     />
