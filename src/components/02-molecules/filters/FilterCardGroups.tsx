@@ -4,22 +4,22 @@ import { ChangeEvent, useState } from "react"
 import { ChevronDoubleDownIcon } from '@heroicons/react/24/outline'
 import { GroupButtons } from "../GroupButtons"
 
-const optionsExample = [
+const optionsIndicatives = [
     {
         idOption: '1',
-        value: 'ICFES'
+        value: '1'
     },
     {
         idOption: '2',
-        value: 'UNAL'
+        value: '2'
     },
     {
         idOption: '3',
-        value: 'UdeA'
+        value: '3'
     },
     {
         idOption: '4',
-        value: 'General'
+        value: '4'
     },
 ]
 
@@ -84,15 +84,17 @@ export const FilterCardGroups = ({
             </div>
             <div className="grid grid-cols-2 gap-x-4">
                 <CustomSelect
+                    textFirstSelect="----------"
                     idSelect={filterValues.year}
                     label={"Grado:"}
                     options={optionsGrades}
                     handleSeletedOption={handleValues}
                 />
                 <CustomSelect
+                    textFirstSelect="----------"
                     idSelect={filterValues.year}
                     label={"Indicativo:"}
-                    options={optionsGrades}
+                    options={optionsIndicatives}
                     handleSeletedOption={handleValues}
                 />
             </div>

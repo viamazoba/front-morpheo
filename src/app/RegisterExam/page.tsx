@@ -1,11 +1,14 @@
-import { ChangeEvent, FormEvent, useState } from "react"
-import { FormStructure } from "../01-atoms/FormStructure"
-import { TitleForm } from "../01-atoms/TitleForm"
-import { GroupButtons } from "./GroupButtons"
-import { CustomSelect } from "../01-atoms/CustomSelect"
-import { CustomInput } from "../01-atoms/CustomInput"
+'use client'
 
-export function FormSubject() {
+import { CustomInput } from "@/components/01-atoms/CustomInput"
+import { CustomSelect } from "@/components/01-atoms/CustomSelect"
+import { FormStructure } from "@/components/01-atoms/FormStructure"
+import { TitleForm } from "@/components/01-atoms/TitleForm"
+import { GroupButtons } from "@/components/02-molecules/GroupButtons"
+import { ChangeEvent, FormEvent, useState } from "react"
+
+
+export default function RegisterExam() {
     const [showMenu, setShowMenu] = useState('0')
     const [subjects, setSubjects] = useState(['Matemáticas', 'Español', 'Ciencias Naturales', 'Sociales', 'Inglés'])
 
@@ -26,6 +29,8 @@ export function FormSubject() {
                 setSubjects(['Razonamiento', 'Lectura'])
             } else if (e.target.value === 'General') {
                 setShowMenu('3')
+            } else {
+                setShowMenu('0')
             }
         }
     }
@@ -33,6 +38,7 @@ export function FormSubject() {
     return (
         <section>
             <FormStructure
+                classFatherContainer="my-auto"
                 classContainer="max-w-96 min-h-30 pb-7 relative"
                 classForm="formResetPassword mt-16 min-h-30"
                 onSubmit={handleOnSubmit}
@@ -46,6 +52,7 @@ export function FormSubject() {
 
                 <div className="grid grid-cols-2 gap-5 my-5">
                     <CustomSelect
+                        textFirstSelect="-------"
                         idSelect={'selectTypeExam'}
                         label={'Tipo de Examen'}
                         options={[
@@ -70,6 +77,7 @@ export function FormSubject() {
                     />
 
                     <CustomSelect
+                        textFirstSelect="-------"
                         idSelect={'selectGroup'}
                         label={'Seleccione Grupo'}
                         options={[
@@ -104,6 +112,7 @@ export function FormSubject() {
                         />
 
                         <CustomSelect
+                            textFirstSelect="-------"
                             idSelect={'selectPeriod'}
                             label={'Periodo examen'}
                             options={[
