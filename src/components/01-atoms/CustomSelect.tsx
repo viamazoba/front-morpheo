@@ -1,4 +1,4 @@
-import { ChangeEvent } from "react"
+import { ChangeEvent, ReactNode } from "react"
 
 type OptionsSelect = {
     idOption: string
@@ -6,13 +6,14 @@ type OptionsSelect = {
 }
 
 type CustomSelectProps = {
+    textFirstSelect?: string
     idSelect: string
     label: string
     options: OptionsSelect[]
     handleSeletedOption: (e: ChangeEvent<HTMLSelectElement>) => void
 }
 
-const optionsExample:OptionsSelect[]  = [
+const optionsExample: OptionsSelect[] = [
     {
         idOption: '1',
         value: 'Única pregunta'
@@ -24,28 +25,29 @@ const optionsExample:OptionsSelect[]  = [
 ]
 
 export const CustomSelect = ({
-    idSelect='questions',
-    label='Tipo de pregunta',
+    textFirstSelect = '---- Seleccione una opcion -----',
+    idSelect = 'questions',
+    label = 'Tipo de pregunta',
     options = optionsExample,
     handleSeletedOption
 }: CustomSelectProps) => {
-    return(
+    return (
         <div className="flex flex-col">
-            <label 
+            <label
                 htmlFor={idSelect}
                 className="label"
             >
                 {label}
             </label>
             <select
-                className="select" 
-                name={idSelect} 
+                className="select"
+                name={idSelect}
                 id={idSelect}
                 onChange={handleSeletedOption}
             >
-                <option value="">---- &nbsp;&nbsp;Seleccione una opcion&nbsp;&nbsp;-----</option>
+                <option value="">{textFirstSelect}</option>
                 {
-                    options.map(option =>(
+                    options.map(option => (
                         <option
                             key={option.idOption}
                             value={option.idOption}

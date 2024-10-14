@@ -84,6 +84,7 @@ export const FilterCardExam = ({
             </div>
             <div>
                 <CustomSelect
+                    textFirstSelect="----- Opciones -----"
                     idSelect={filterValues.typeExam}
                     label={"Tipo de examen"}
                     options={optionsExample}
@@ -92,6 +93,7 @@ export const FilterCardExam = ({
             </div>
             <div>
                 <CustomSelect
+                    textFirstSelect="----- Opciones -----"
                     idSelect={filterValues.year}
                     label={"Grado:"}
                     options={optionsGrades}

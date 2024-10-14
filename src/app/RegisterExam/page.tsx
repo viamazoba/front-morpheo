@@ -29,6 +29,8 @@ export default function RegisterExam() {
                 setSubjects(['Razonamiento', 'Lectura'])
             } else if (e.target.value === 'General') {
                 setShowMenu('3')
+            } else {
+                setShowMenu('0')
             }
         }
     }
@@ -50,6 +52,7 @@ export default function RegisterExam() {
 
                 <div className="grid grid-cols-2 gap-5 my-5">
                     <CustomSelect
+                        textFirstSelect="-------"
                         idSelect={'selectTypeExam'}
                         label={'Tipo de Examen'}
                         options={[
@@ -74,6 +77,7 @@ export default function RegisterExam() {
                     />
 
                     <CustomSelect
+                        textFirstSelect="-------"
                         idSelect={'selectGroup'}
                         label={'Seleccione Grupo'}
                         options={[
@@ -108,6 +112,7 @@ export default function RegisterExam() {
                         />
 
                         <CustomSelect
+                            textFirstSelect="-------"
                             idSelect={'selectPeriod'}
                             label={'Periodo examen'}
                             options={[
