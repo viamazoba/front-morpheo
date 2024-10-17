@@ -38,9 +38,9 @@ export default function RegisterExam() {
     return (
         <section>
             <FormStructure
-                classFatherContainer="my-auto"
-                classContainer="max-w-96 min-h-30 pb-7 relative"
-                classForm="formResetPassword mt-16 min-h-30"
+                classFatherContainer="h-[calc(100vh-230px)] pb-2"
+                classContainer="max-w-96 pb-7 relative"
+                classForm="formResetPassword mt-16"
                 onSubmit={handleOnSubmit}
             >
 

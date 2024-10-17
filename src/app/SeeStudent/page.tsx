@@ -22,7 +22,7 @@ const exampleResults = [
 
 export default function SeeStudent() {
     return (
-        <section className="flex flex-col md:flex-row md:justify-center gap-5 mx-3 pt-9 min-h-lvh">
+        <section className="flex flex-col md:flex-row md:justify-center gap-5 mx-3 pt-9 pb-4">
             <section className="max-w-screen-sm">
                 <div className="flex justify-between gap-6 bg-principal-350 rounded-4 py-5 px-2">
                     <div className="flex text-20">

@@ -5,9 +5,9 @@ import React, { FC } from "react";
 import Image from "next/image";
 import pill from "@icons/pill.svg"
 
-const GeneralLayout: FC<GeneralLayoutInterface> = ({children})=>{
-    return(
-        <div className="overflow-x-hidden">
+const GeneralLayout: FC<GeneralLayoutInterface> = ({ children }) => {
+    return (
+        <div className="overflow-x-hidden min-h-[calc(100lvh-294px)]">
             {children}
             {/* <Image
                 src={pill}

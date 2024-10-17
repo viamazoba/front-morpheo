@@ -5,11 +5,11 @@ import { GeneralForm } from "@/components/03-organisms/GeneralForm";
 
 export default function CreateExam() {
 
-    return(
-        <section className="px-7 py-8 min-h-lvh bg-principal-320">
+    return (
+        <section className="px-7 py-8">
             <Tabs
                 tabs={['Metáticas', 'Español', 'Sociales', 'Inglés']}
-                tabsContent={[<GeneralForm key={1} />, <GeneralForm key={2}/>, <GeneralForm key={3}/>, <GeneralForm key={4}/>]}
+                tabsContent={[<GeneralForm key={1} />, <GeneralForm key={2} />, <GeneralForm key={3} />, <GeneralForm key={4} />]}
             />
         </section>
     )
