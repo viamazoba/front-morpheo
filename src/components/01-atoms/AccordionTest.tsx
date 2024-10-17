@@ -13,6 +13,7 @@ type AccordionTestInterface = {
     subTitle?: string
     classNameSubTitle?: string
     isEditIcon?: boolean
+    isRemove?: boolean
 }
 
 export const AccordionTest: FC<AccordionTestInterface> = ({
@@ -23,7 +24,8 @@ export const AccordionTest: FC<AccordionTestInterface> = ({
     classNameTitle,
     subTitle,
     classNameSubTitle,
-    isEditIcon
+    isEditIcon,
+    isRemove = true
 }) => {
     // TODO: Sobre saltar este elemento
     // Esto para que entienda que pregunta dejó incompleta
@@ -49,9 +51,12 @@ export const AccordionTest: FC<AccordionTestInterface> = ({
                             className='cursor-pointer rounded py-0 px-0.5 mr-3 w-7 text-principal-180 hover:bg-principal-180 hover:text-principal-150'
                         />
                     }
-                    <Remove
-                        classSvg='min-w-6 w-7 h-7 hover:bg-principal-500 rounded opacity-90 cursor-pointer mr-3'
-                    />
+                    {
+                        isRemove &&
+                        <Remove
+                            classSvg='min-w-6 w-7 h-7 hover:bg-principal-500 rounded opacity-90 cursor-pointer mr-3'
+                        />
+                    }
                     <Image
                         src={arrow}
                         width={50}
