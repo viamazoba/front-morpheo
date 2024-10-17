@@ -22,15 +22,24 @@ const exampleResults = [
 
 export default function SeeStudent() {
     return (
-        <section className="flex gap-5 mx-3 pt-9 min-h-lvh">
+        <section className="flex flex-col md:flex-row md:justify-center gap-5 mx-3 pt-9 min-h-lvh">
             <section className="max-w-screen-sm">
-                <div className="flex justify-between gap-6 bg-principal-100 rounded-4 py-5 px-2">
+                <div className="flex justify-between gap-6 bg-principal-350 rounded-4 py-5 px-2">
                     <div className="flex text-20">
-                        <p className="font-medium text-principal-150 bg-principal-350 rounded py-1 px-2">Juan Carlos Osorio Rivera</p>
+                        <p className="font-medium text-principal-150 rounded py-1 px-2">Nombre Examen:</p>
                     </div>
                     <div className="flex text-20">
-                        <p className="font-semibold text-principal-150 py-1">ICFES:&nbsp;</p>
-                        <p className="font-medium text-principal-150 bg-principal-350 rounded py-1 px-2">70.25%</p>
+                        <p className="font-semibold text-principal-150 py-1">ICFES&nbsp;</p>
+                    </div>
+                </div>
+
+                <div className="flex justify-center gap-6 bg-principal-100 rounded-4 py-3 px-2">
+                    <div className="flex text-20 py-0.5">
+                        <p className="font-medium text-principal-150 rounded py-1 px-2">Juan Carlos Osorio Rivera</p>
+                    </div>
+                    <div className="flex text-20 rounded-3 border-principal-150 border px-2 py-0.5">
+                        <p className="font-semibold text-principal-150 py-1">Puesto:&nbsp;</p>
+                        <p className="font-medium text-principal-150 rounded py-1 px-2">2</p>
                     </div>
                 </div>
                 <div className="bg-principal-150 pt-2 pb-5">
@@ -46,6 +55,10 @@ export default function SeeStudent() {
                             </div>
                         ))
                     }
+                    <div className="grid grid-cols-2 border-b border-b-principal-50 py-2 w-full bg-principal-350">
+                        <p className="font-semibold text-principal-150 px-2">Resultado</p>
+                        <p className="font-semibold text-principal-150 px-2">70.25%</p>
+                    </div>
                 </div>
             </section>
             <section className="max-w-screen-sm">
@@ -57,7 +70,7 @@ export default function SeeStudent() {
                 </p>
                 <div className="px-1 pt-2 pb-1">
                     <AccordionTest
-                        title="Preguntas con Mayor cantidad de fallos"
+                        title="Preguntas Falladas"
                         classNameTitle="font-semibold text-principal-350"
                         isRemove={false}
                     >
@@ -84,7 +97,7 @@ export default function SeeStudent() {
 
                 <div className="px-1 pt-2 pb-5">
                     <AccordionTest
-                        title="Preguntas con Mayor Tiempo de Respuesta"
+                        title="Preguntas con Mayor Tiempo de Desarrollo"
                         classNameTitle="font-semibold text-principal-350"
                         isRemove={false}
                     >
