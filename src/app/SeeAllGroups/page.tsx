@@ -9,7 +9,7 @@ export default function SeeAllGroups() {
     const arrayExample = ['1', '2', '3', '4', '5', '6', '7']
 
     return (
-        <section className="flex gap-x-6 mx-auto my-8 min-h-lvh max-w-screen-3xl">
+        <section className="flex gap-x-6 mx-auto my-8 max-w-screen-3xl">
 
             <section className="max-w-64">
                 <FilterCardGroups

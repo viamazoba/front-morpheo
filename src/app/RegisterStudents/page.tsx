@@ -19,7 +19,7 @@ const arrayButtons = [{
 export default function RegisterStudents() {
 
     return (
-        <section className="min-h-lvh">
+        <section>
 
             <section
                 className="flex flex-col gap-y-10 rounded-12 bg-principal-150 shadow-xl px-16 pt-9 pb-11 my-20 mx-auto h-fit w-fit"
