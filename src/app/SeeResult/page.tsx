@@ -45,7 +45,7 @@ const exampleStudents = [
 export default function SeeResult() {
 
     return (
-        <section className="flex flex-col lg:flex-row lg:justify-center gap-5 my-8 mx-3 min-h-lvh">
+        <section className="flex flex-col lg:flex-row lg:justify-center gap-5 my-8 mx-3">
             <section className="max-w-screen-sm">
                 <div className="flex justify-between gap-6 bg-principal-100 rounded-4 py-5 px-2">
                     <div className="flex text-20">
