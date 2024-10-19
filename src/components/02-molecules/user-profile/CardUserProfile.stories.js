@@ -1,7 +1,7 @@
 import { CardUserProfile as card } from './CardUserProfile';
 
 const meta = {
-    title: 'Molecules/user-profile/CardUserProfile',
+    title: 'Molecules/UserProfile/CardUserProfile',
 
     component: card,
     argTypes: {
