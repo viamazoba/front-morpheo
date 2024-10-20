@@ -4,7 +4,7 @@ import Link from "next/link"
 export const CardResultReview = () => {
 
     return (
-        <div className="bg-principal-150 rounded-8 shadow-xl px-4 py-3 max-w-73 max-h-fit">
+        <div className="bg-principal-150 rounded-8 shadow-xl px-4 py-3 min-w-60 max-w-73 max-h-fit">
             <h2 className="text-principal-350">
                 Resumen
             </h2>
@@ -40,7 +40,7 @@ export const CardResultReview = () => {
                 </div>
                 <Link
                     href={"/"}
-                    className="font-semibold text-principal-100 rounded bg-principal-150 border border-principal-100 py-0.5 px-1 hover:text-principal-500"
+                    className="font-semibold text-principal-100 rounded bg-principal-150 border border-principal-100 py-0.5 px-1 hover:text-principal-500 hover:border-principal-500"
                 >
                     Ver Más
                 </Link>
