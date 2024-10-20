@@ -50,18 +50,6 @@ export const CardUserProfile = () => {
                         macardonas@gmail.com
                     </p>
                 </div>
-                {/* <div className="mb-2">
-                    <p className="font-semibold text-principal-180">
-                        Resultado:&nbsp;
-                        <span className="font-normal text-principal-350">70.2%</span>
-                    </p>
-                </div>
-                <Link
-                    href={"/"}
-                    className="font-semibold text-principal-500 text-opacity-80 border-b-[1px] py-0.5 hover:text-principal-500"
-                >
-                    Ver Más
-                </Link> */}
                 <hr className="border-principal-800 mt-3" />
                 <div className="bg-principal-800 h-1" />
             </div>
