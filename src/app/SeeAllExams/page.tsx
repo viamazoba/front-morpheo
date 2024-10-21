@@ -9,7 +9,7 @@ export default function SeeAllExams() {
     const arrayExample = ['1', '2', '3', '4', '5', '6', '7']
 
     return (
-        <section className="flex gap-x-6 mx-auto my-10 max-w-screen-3xl">
+        <section className="flex gap-x-6 overflow-y-hidden mx-auto mb-10 mt-20 max-w-screen-3xl">
 
             <section className="max-w-64">
                 <FilterCardExam
